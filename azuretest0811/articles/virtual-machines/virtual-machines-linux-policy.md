@@ -3,7 +3,7 @@ title: Apply policies to Azure Resource Manager Virtual Machines | Microsoft Azu
 description: How to apply a policy to an Azure Resource Manager Linux Virtual Machine
 services: virtual-machines-linux
 documentationcenter: ''
-author: singhkay
+author: singhkays
 manager: drewm
 editor: ''
 tags: azure-resource-manager
@@ -14,7 +14,7 @@ ms.tgt_pltfrm: vm-linux
 ms.devlang: na
 ms.topic: article
 ms.date: 04/13/2016
-ms.author: singhkay
+ms.author: singhkays
 
 ---
 # Apply policies to Azure Resource Manager Virtual Machines

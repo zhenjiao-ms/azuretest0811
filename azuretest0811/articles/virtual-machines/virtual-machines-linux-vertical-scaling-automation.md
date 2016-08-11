@@ -3,7 +3,7 @@ title: Vertically scale Azure virtual machine with Azure Automation | Microsoft 
 description: How to vertically scale a Linux Virtual Machine in response to monitoring alerts with Azure Automation
 services: virtual-machines-linux
 documentationcenter: ''
-author: singhkay
+author: singhkays
 manager: drewm
 editor: ''
 tags: azure-resource-manager
@@ -14,7 +14,7 @@ ms.tgt_pltfrm: vm-linux
 ms.devlang: na
 ms.topic: article
 ms.date: 03/29/2016
-ms.author: singhkay
+ms.author: singhkays
 
 ---
 # Vertically scale Azure virtual machine with Azure Automation
