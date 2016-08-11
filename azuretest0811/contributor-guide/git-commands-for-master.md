@@ -17,7 +17,6 @@ ms.tgt_pltfrm: ''
 ms.workload: ''
 ms.date: 01/16/2015
 ms.author: tysonn
-
 ---
 # Git commands for creating a new article or updating an existing article
 ## Standard process (working from master)

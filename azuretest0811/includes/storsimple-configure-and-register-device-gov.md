@@ -15,6 +15,8 @@
    > These configuration steps need to be performed on the active controller of the device. The serial console menu indicates the controller state in the banner message. If you are not connect to the active controller, disconnect and then connect to the active controller.
    > 
    > 
+   > 
+   > 
    
    1. At the command prompt, type your password. The default device password is **Password1**.
    2. Type the following command:
@@ -104,6 +106,8 @@
     
     > [!NOTE]
     > You can press Ctrl + C at any time to exit the setup wizard. If you have entered all the network settings (IP address for Data 0, Subnet mask, and Gateway), your entries will be retained.
+    > 
+    > 
     > 
     > 
     

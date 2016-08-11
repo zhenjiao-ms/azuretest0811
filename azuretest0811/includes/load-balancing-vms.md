@@ -17,7 +17,6 @@ ms.devlang: na
 ms.topic: article
 ms.date: 09/17/2014
 ms.author: cherylmc
-
 ---
 # Load Balancing for Azure Infrastructure Services
 There are two levels of load balancing available for Azure infrastructure services:

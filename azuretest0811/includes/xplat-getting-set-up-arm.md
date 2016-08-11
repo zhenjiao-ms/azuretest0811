@@ -13,7 +13,6 @@ ms.tgt_pltfrm: linux
 ms.workload: infrastructure
 ms.date: 04/13/2015
 ms.author: rasquill
-
 ---
 ## Using Azure CLI with Azure Resource Manager (ARM)
 Before you can use the Azure CLI with Resource Manager commands and templates to deploy Azure resources and workloads using resource groups, you will need an account with Azure (of course). If you do not have an account, you can get a [free Azure trial here](https://azure.microsoft.com/pricing/free-trial/).

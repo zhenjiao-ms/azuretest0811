@@ -39,6 +39,8 @@ In this procedure, you will:
   > Only the `GarbageCollection` operation is supported for StorSimple at this time. Also note that the parameters issued for Microsoft.Data.SqlRemoteBlobs.Maintainer.exe are case sensitive. 
   > 
   > 
+  > 
+  > 
 
 #### To revert the content database and Recycle Bin settings
 1. On the SQL Server, in SQL Management Studio, run the following update queries for the target content database:

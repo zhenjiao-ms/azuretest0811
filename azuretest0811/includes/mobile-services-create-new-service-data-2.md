@@ -39,10 +39,13 @@ To be able to store app data in the new mobile service, you must first create a 
      <td><font color="transparent">-</font></td>
      </tr>     
      </table>     
-
+   
       This is the minimum requirement for a table in Mobile Services. 
-
-    > [AZURE.NOTE] When dynamic schema is enabled on your mobile service, new columns are created automatically when JSON objects are sent to the mobile service by an insert or update operation.
+   
+   > [!NOTE]
+   > When dynamic schema is enabled on your mobile service, new columns are created automatically when JSON objects are sent to the mobile service by an insert or update operation.
+   > 
+   > 
 
 You are now ready to use the new mobile service as data storage for the app.
 

@@ -2,9 +2,9 @@ You can create multiple services within a subscription, each one provisioned at 
 
 Other tiers are one per subscription. You can contact Azure Support if you need more than one S2, S3, or S3 HD per subscription.
 
-| Resource | Free | Basic | S1 | S2 | S3 <sup>1</sup> <br/>(Preview) | S3 HD <sup>1</sup> <br/>(Preview)  |
+| Resource | Free | Basic | S1 | S2 | S3 <sup>1</sup> <br/>(Preview) | S3 HD <sup>1</sup> <br/>(Preview) |
 | --- | --- | --- | --- | --- | --- | --- |
-| Maximum services |1 |12 |12 |1 |1 |1  |
+| Maximum services |1 |12 |12 |1 |1 |1 |
 | Maximum scale in SU <sup>2</sup> |N/A <sup>3</sup> |3 SU <sup>4</sup> |36 SU |36 SU |36 SU |12 SU <sup>5</sup> |
 
 <sup>1</sup> **Preview** tiers are billed at an introductory rate of 50% off the full price. Prior to general availability (GA) tiers are introduced as a Preview feature. During Preview, there is no service level agreement (SLA). See [Choose a SKU or tier for Azure Search](../articles/search/search-sku-tier.md) for more information about tiers.

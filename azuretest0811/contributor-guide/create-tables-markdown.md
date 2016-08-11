@@ -17,7 +17,6 @@ ms.tgt_pltfrm: ''
 ms.workload: ''
 ms.date: 12/26/2014
 ms.author: tysonn
-
 ---
 # Create tables in markdown
 The simplest way to create a table in markdown is to use pipes and lines.

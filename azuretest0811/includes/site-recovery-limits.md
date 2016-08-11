@@ -14,7 +14,6 @@ ms.tgt_pltfrm: NA
 ms.workload: TBD
 ms.date: 07/06/2015
 ms.author: lauraa
-
 ---
 The following limits apply to Azure Site Recovery:
 

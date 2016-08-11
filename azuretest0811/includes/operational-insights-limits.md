@@ -14,7 +14,6 @@ ms.tgt_pltfrm: NA
 ms.workload: TBD
 ms.date: 07/01/2015
 ms.author: banders
-
 ---
 The following limits apply to Operational Insights subscriptions.
 

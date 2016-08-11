@@ -1,4 +1,5 @@
 > [!div class="op_single_selector"]
+> 
 > * [Azure Active Directory](../articles/mobile-services/mobile-services-how-to-register-active-directory-authentication.md)
 > * [Facebook](../articles/mobile-services/mobile-services-how-to-register-facebook-authentication.md)
 > * [Google](../articles/mobile-services/mobile-services-how-to-register-google-authentication.md)

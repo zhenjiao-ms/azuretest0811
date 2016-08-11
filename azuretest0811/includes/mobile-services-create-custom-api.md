@@ -9,7 +9,7 @@
    > 
 4. Click on **completeall** in the API table.
 5. Click the **Script** tab, replace the existing code with the following code, then click **Save**.     This code uses the [mssql object](http://msdn.microsoft.com/library/windowsazure/jj554212.aspx) to access the **todoitem** table directly to set the `complete` flag on all items. Because the **exports.post** function is used, clients send a POST request to perform the operation. The number of changed rows is returned to the client as an integer value.
-
+   
         exports.post = function(request, response) {
             var mssql = request.service.mssql;
             var sql = "UPDATE todoitem SET complete = 1 " +
@@ -21,7 +21,6 @@
                 }
             })
         };
-
 
 > [!NOTE]
 > The [request](http://msdn.microsoft.com/library/windowsazure/jj554218.aspx) and [response](http://msdn.microsoft.com/library/windowsazure/dn303373.aspx) object supplied to custom API functions are implemented by the [Express.js library](http://go.microsoft.com/fwlink/p/?LinkId=309046). 

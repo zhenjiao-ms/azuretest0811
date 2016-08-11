@@ -16,7 +16,6 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/10/2016
 ms.author: rogardle
-
 ---
 > [!NOTE]
 > This is for working with DC/OS-based ACS clusters. There is no need to do this for Swarm-based ACS clusters.

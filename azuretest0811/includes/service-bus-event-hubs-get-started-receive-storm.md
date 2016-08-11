@@ -204,7 +204,7 @@ This tutorial uses an [HDInsight Storm](../articles/hdinsight/hdinsight-storm-ov
                 topology.runScenario(args);
             }
         }
-
+    
     This class creates a new Event Hubs spout, using the properties in the configuration file to instatiate it. It is important to note that this example creates as many spouts tasks as the number of partitions in the Event Hub, in order to use the maximum parallelism allowed by that Event Hub.
 
 <!-- Links -->

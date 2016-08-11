@@ -43,11 +43,11 @@ To deploy the ARM template you downloaded by using PowerShell, follow the steps 
    
         Outputs           :
 4. Run the **`Get-AzureRmVirtualNetwork`** cmdlet to view the properties of the new VNet, as shown below.
-
+   
         Get-AzureRmVirtualNetwork -ResourceGroupName TestRG -Name TestVNet
-
+   
     Here is the expected output for the command above:
-
+   
         Name              : TestVNet
         ResourceGroupName : TestRG
         Location          : centralus
@@ -86,3 +86,4 @@ To deploy the ARM template you downloaded by using PowerShell, follow the steps 
                                 "ProvisioningState": "Succeeded"
                               }
                             ]
+

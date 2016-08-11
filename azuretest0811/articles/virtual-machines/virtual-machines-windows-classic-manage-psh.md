@@ -3,7 +3,7 @@ title: Manage your virtual machines by using Azure PowerShell | Microsoft Azure
 description: Learn commands that you can use to automate tasks in managing your virtual machines.
 services: virtual-machines-windows
 documentationcenter: windows
-author: singhkays
+author: singhkay
 manager: timlt
 editor: ''
 tags: azure-service-management

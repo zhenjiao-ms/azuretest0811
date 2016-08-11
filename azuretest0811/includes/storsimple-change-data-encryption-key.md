@@ -49,6 +49,8 @@ If you are using the device serial console to connect to the Windows PowerShell 
    > This process must be initiated within four hours of authorizing a StorSimple device.
    > 
    > 
+   > 
+   > 
    
    This new key is then sent to the service to be pushed to all the devices that are registered with the service. An alert will then appear on the service dashboard. The service will disable all the operations on the registered devices, and the device administrator will then need to update the service data encryption key on the other devices. However, the I/Os (hosts sending data to the cloud) will not be disrupted.
    

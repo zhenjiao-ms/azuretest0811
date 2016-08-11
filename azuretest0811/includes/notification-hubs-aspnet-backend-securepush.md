@@ -8,19 +8,19 @@
             public string Payload { get; set; }
             public bool Read { get; set; }
         }
-
+   
         public class Notifications
         {
             public static Notifications Instance = new Notifications();
-
+   
             private List<Notification> notifications = new List<Notification>();
-
+   
             public NotificationHubClient Hub { get; set; }
-
+   
             private Notifications() {
                 Hub = NotificationHubClient.CreateClientFromConnectionString("{conn string with full access}",     "{hub name}");
             }
-
+   
             public Notification CreateNotification(string payload)
             {
                 var notification = new Notification() {
@@ -28,19 +28,18 @@
                 Payload = payload,
                 Read = false
                 };
-
+   
                 notifications.Add(notification);
-
+   
                 return notification;
             }
-
+   
             public Notification ReadNotification(int id)
             {
                 return notifications.ElementAt(id);
             }
         }
-
-1. In NotificationsController.cs, replace the code inside the **NotificationsController** class definition with the following code. This component implements a way for the device to retrieve the notification securely, and also provides a way (for the purposes of this tutorial) to trigger a secure push to your devices. Note that when sending the notification to the notification hub, we only send a raw notification with the ID of the notification (and no actual message):
+3. In NotificationsController.cs, replace the code inside the **NotificationsController** class definition with the following code. This component implements a way for the device to retrieve the notification securely, and also provides a way (for the purposes of this tutorial) to trigger a secure push to your devices. Note that when sending the notification to the notification hub, we only send a raw notification with the ID of the notification (and no actual message):
    
        public NotificationsController()
        {
@@ -70,10 +69,9 @@
    
            // gcm
            await Notifications.Instance.Hub.SendGcmNativeNotificationAsync("{\"data\": {\"secureId\": \"" + secureNotificationInTheBackend.Id.ToString() + "\"}}", usernameTag);
-
+   
             return Request.CreateResponse(HttpStatusCode.OK);
         }
-
 
 Note that the `Post` method now does not send a toast notification. It sends a raw notification that contains only the notification ID, and not any sensitive content. Also, make sure to comment the send operation for the platforms for which you do not have credentials configured on your notification hub, as they will result in errors.
 

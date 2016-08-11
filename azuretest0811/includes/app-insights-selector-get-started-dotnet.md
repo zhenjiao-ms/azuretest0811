@@ -8,6 +8,7 @@
 Install the SDK and then add monitoring for other data:
 
 > [!div class="op_single_selector"]
+> 
 > * [Install the SDK](../articles/application-insights/app-insights-asp-net.md#selector1)
 > * [User & page data](../articles/application-insights/app-insights-javascript.md#selector1)
 > * [Exceptions](../articles/application-insights/app-insights-asp-net-exceptions.md#selector1)

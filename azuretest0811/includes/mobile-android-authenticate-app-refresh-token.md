@@ -46,7 +46,7 @@ In this section you will define a ServiceFilter that will detect a HTTP status c
             return detected;
         }
 4. In the ToDoActivity.java file, add the following method to the ToDoActivity class. This method triggers the wait and then update the token on outbound requests when authentication is complete. 
-
+   
         /**
          * Waits for authentication to complete then adds or updates the token 
          * in the X-ZUMO-AUTH request header.
@@ -67,9 +67,7 @@ In this section you will define a ServiceFilter that will detect a HTTP status c
                 }
             }
         }
-
-
-1. In the ToDoActivity.java file, update the `authenticate` method of the ToDoActivity class so that it accepts a boolean parameter to allow forcing the refresh of the token and token cache. We also need to notify any blocked threads when authentication is completed so they can pick up the new token.
+5. In the ToDoActivity.java file, update the `authenticate` method of the ToDoActivity class so that it accepts a boolean parameter to allow forcing the refresh of the token and token cache. We also need to notify any blocked threads when authentication is completed so they can pick up the new token.
    
         /**
          * Authenticates with the desired login provider. Also caches the token. 
@@ -119,7 +117,7 @@ In this section you will define a ServiceFilter that will detect a HTTP status c
                 createTable();
             }
         }   
-2. In the ToDoActivity.java file, add this code for a new `RefreshTokenCacheFilter` class inside the ToDoActivity class:
+6. In the ToDoActivity.java file, add this code for a new `RefreshTokenCacheFilter` class inside the ToDoActivity class:
    
         /**
         * The RefreshTokenCacheFilter class filters responses for HTTP status code 401. 
@@ -192,10 +190,9 @@ In this section you will define a ServiceFilter that will detect a HTTP status c
                 return future;
             }
         }
-
+   
     This service filter will check each response for HTTP status code 401 "Unauthorized". If a 401 is encountered, a new login request to obtain a new token will be setup on the UI thread. Other calls will be blocked until the login is completed, or until 5 attempts have failed. If the new token is obtained, the request that triggered the 401 will be retried with the new token and any blocked calls will be retried with the new token. 
-
-1. In the ToDoActivity.java file, add this code for a new `ProgressFilter` class inside the ToDoActivity class:
+7. In the ToDoActivity.java file, add this code for a new `ProgressFilter` class inside the ToDoActivity class:
    
         /**
         * The ProgressFilter class renders a progress bar on the screen during the time the App is waiting for the response of a previous request.
@@ -242,7 +239,7 @@ In this section you will define a ServiceFilter that will detect a HTTP status c
         }
    
     This filter will show the progress bar on the beginning of the request and will hide it when the response arrived.
-2. In the ToDoActivity.java file, update the `onCreate` method as follows:
+8. In the ToDoActivity.java file, update the `onCreate` method as follows:
    
         @Override
         public void onCreate(Bundle savedInstanceState) {
@@ -271,7 +268,6 @@ In this section you will define a ServiceFilter that will detect a HTTP status c
                     "Verify the URL"), "Error");
             }
         }
-
+   
        In this code, `RefreshTokenCacheFilter` is used in addition to `ProgressFilter`. Also during `onCreate` we want to load the token cache. So `false` is passed in to the `authenticate` method.
-
 

@@ -2,7 +2,7 @@ Storage is constrained by disk space or by a hard limit on the *maximum number* 
 
 | Resource | Free | Basic | S1 | S2 | S3 <br/>(Preview) | S3 HD <br/>(Preview) |
 | --- | --- | --- | --- | --- | --- | --- |
-| Service Level Agreement (SLA) |No <sup>1</sup> |Yes |Yes |Yes |No <sup>1</sup> |No <sup>1</sup>  |
+| Service Level Agreement (SLA) |No <sup>1</sup> |Yes |Yes |Yes |No <sup>1</sup> |No <sup>1</sup> |
 | Storage per service |50 MB |2 GB |300 GB |1.2 TB |2.4 TB |200 GB |
 | Partitions per service |N/A |1 |12 |12 |12 |1 |
 | Partition size |N/A |2 GB |25 GB |100 GB |200 GB |200 GB |

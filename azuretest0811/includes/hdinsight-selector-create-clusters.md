@@ -1,4 +1,5 @@
 > [!div class="op_multi_selector" title1="OS" title2="Creation method"]
+> 
 > * [Linux | Overview](../articles/hdinsight/hdinsight-hadoop-provision-linux-clusters.md)
 > * [Linux | Azure portal](../articles/hdinsight/hdinsight-hadoop-create-linux-clusters-portal.md)
 > * [Linux | Azure Data Factory](../articles/hdinsight/hdinsight-hadoop-create-linux-clusters-adf.md)

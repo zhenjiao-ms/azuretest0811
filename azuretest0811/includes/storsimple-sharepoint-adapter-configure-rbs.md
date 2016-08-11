@@ -24,6 +24,8 @@
       > The BLOB store must be shared and reachable by all web front-end (WFE) servers, and the user account that is configured for the SharePoint server farm must have access to the share.
       > 
       > 
+      > 
+      > 
       
          ![Enable the RBS provider](./media/storsimple-sharepoint-adapter-configure-rbs/HCS_SSASP_ConfigRBS2-include.png)
       
@@ -93,6 +95,8 @@
    
    > [!NOTE]
    > Moving the content database to the device is only supported for the StorSimple 8000 series (it is not supported for the 5000 or 7000 series).
+   > 
+   > 
    > 
    > 
    

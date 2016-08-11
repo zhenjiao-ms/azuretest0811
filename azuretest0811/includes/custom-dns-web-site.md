@@ -220,6 +220,8 @@ To create an A record, you must first find the IP address of your website. Then 
    > While an alias of awverify may work for some registrars, others may require the full alias domain name of awverify.www.customdomainname.com or awverify.customdomainname.com.
    > 
    > 
+   > 
+   > 
    
     For example, the following will create an CNAME record that Azure can use to verify the A record configuration.
    

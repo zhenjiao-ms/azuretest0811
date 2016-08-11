@@ -27,11 +27,15 @@
    > If your test machine is joined to a domain, firewall exceptions may be controlled by a domain policy. In this case, you would need to contact your domain adminstrator to get an exemption for the port on your machine.
    > 
    > 
+   > 
+   > 
    
     You should now be configured to test with IIS Express hosting your mobile service. 
    
    > [!NOTE]
    > Once you finish your testing of the service locally, you should delete the Windows Firewall rule you created. 
+   > 
+   > 
    > 
    > 
    > 

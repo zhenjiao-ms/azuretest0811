@@ -14,7 +14,6 @@ ms.devlang: dotnet
 ms.topic: article
 ms.date: 01/21/2016
 ms.author: priyamo
-
 ---
 <!--TODO: Introduction -->
 

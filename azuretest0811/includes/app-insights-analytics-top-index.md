@@ -1,4 +1,5 @@
 > [!div class="op_single_selector"]
+> 
 > * [Overview](../articles/application-insights/app-insights-analytics.md)
 > * [Tour](../articles/application-insights/app-insights-analytics-tour.md)
 > * [Using](../articles/application-insights/app-insights-analytics-using.md)

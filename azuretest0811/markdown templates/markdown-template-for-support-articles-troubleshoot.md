@@ -15,7 +15,6 @@ ms.tgt_pltfrm: may be required
 ms.workload: required
 ms.date: mm/dd/yyyy
 ms.author: Your MSFT alias or your full email address;semicolon separates two or more
-
 ---
 # Title (Maximum 120 characters, target the primary keyword)
 *Use 2-3 secondary keywords in the description.*

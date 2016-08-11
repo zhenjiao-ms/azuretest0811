@@ -22,6 +22,8 @@
       > After the backup is enabled here, it cannot be reverted. You will need to edit the volume to modify this setting.
       > 
       > 
+      > 
+      > 
       
         ![Add volume](./media/storsimple-create-volume/AddVolume2-include.png)
 4. Click the check icon ![check icon](./media/storsimple-create-volume/HCS_CheckIcon-include.png). A volume will be created with the specified settings.

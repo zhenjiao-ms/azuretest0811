@@ -78,6 +78,8 @@ A new insert script is registered that generates an SAS when a new Todo item is 
    > blobService.generateSharedAccessSignature(containerName, '', sharedAccessPolicy);
    > 
    > 
+   > 
+   > 
 
 Next, you will update the quickstart app to add image upload functionality by using the SAS generated on insert.
 

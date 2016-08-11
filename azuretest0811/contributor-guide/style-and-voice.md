@@ -17,7 +17,6 @@ ms.tgt_pltfrm: ''
 ms.workload: ''
 ms.date: 12/16/2014
 ms.author: glenga
-
 ---
 # Writing Azure documentation - style and voice cheat sheet
 Here's a cheat sheet that contains pointers about how to write technical articles for Azure services and technologies. These guidelines apply whether you are creating new documentation or updating existing documentation.

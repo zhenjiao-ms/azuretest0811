@@ -1,4 +1,5 @@
 > [!div class="op_single_selector"]
+> 
 > * [Linux-based](../articles/hdinsight/hdinsight-hadoop-provision-linux-clusters.md)
 > * [Overview](../articles/hdinsight/hdinsight-provision-clusters.md)
 > * [Azure portal](../articles/hdinsight/hdinsight-hadoop-create-windows-clusters-portal.md)

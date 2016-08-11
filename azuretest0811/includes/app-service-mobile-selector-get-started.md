@@ -1,4 +1,5 @@
 > [!div class="op_single_selector"]
+> 
 > * [Android](../articles/app-service-mobile/app-service-mobile-android-get-started.md)
 > * [Cordova](../articles/app-service-mobile/app-service-mobile-cordova-get-started.md)
 > * [iOS](../articles/app-service-mobile/app-service-mobile-ios-get-started.md)

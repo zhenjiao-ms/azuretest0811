@@ -88,6 +88,8 @@ To connect to the Database Engine from another computer, you must create at leas
    > Members of the sysadmin fixed server role have complete control of the Database Engine. You should carefully restrict membership in this role.
    > 
    > 
+   > 
+   > 
    
    ![sysadmin](./media/virtual-machines-sql-server-connection-steps/25sysadmin.png)
 9. Click OK.

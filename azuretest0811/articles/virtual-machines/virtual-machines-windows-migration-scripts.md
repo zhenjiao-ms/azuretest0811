@@ -3,7 +3,7 @@ title: Clone a classic Virtual Machine to Azure Resource Manager using PowerShel
 description: This article shows you how to clone a single classic Virtual Machine to Azure Resource Manager using PowerShell scripts
 services: virtual-machines-windows
 documentationcenter: ''
-author: singhkays
+author: singhkay
 manager: drewm
 editor: ''
 tags: azure-resource-manager

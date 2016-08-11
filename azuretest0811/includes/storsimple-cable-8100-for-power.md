@@ -9,6 +9,8 @@
    > To ensure high availability for your system, we recommend that you strictly adhere to the power cabling scheme shown in the following diagram. 
    > 
    > 
+   > 
+   > 
    
     ![Cable your 2U device for power](./media/storsimple-cable-8100-for-power/HCSCableYour2UDeviceforPower.png)
    

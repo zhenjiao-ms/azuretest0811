@@ -23,8 +23,7 @@
        The following image shows the **Basic Settings** dialog box for a tiered volume.
       
         ![Add local volume](./media/storsimple-create-volume-u2/add-tiered-volume-include.png)
-   
-   1. Click the arrow icon ![arrow-icon](./media/storsimple-create-volume-u2/HCS_ArrowIcon-include.png) to go to the next page.
+   4. Click the arrow icon ![arrow-icon](./media/storsimple-create-volume-u2/HCS_ArrowIcon-include.png) to go to the next page.
 3. In the **Additional Settings** dialog box, add a new access control record (ACR):
    
    1. Supply a **Name** for your ACR.
@@ -33,6 +32,8 @@
       
       > [!NOTE]
       > After the backup is enabled here, it cannot be reverted. You will need to edit the volume to modify this setting.
+      > 
+      > 
       > 
       > 
       

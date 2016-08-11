@@ -14,7 +14,6 @@ ms.tgt_pltfrm: may be required
 ms.workload: required
 ms.date: mm/dd/yyyy
 ms.author: Your MSFT alias or your full email address;semicolon separates two or more
-
 ---
 # Markdown template (article Heading 1 or H1): Heading at the top of the article
 To copy the markdown from this template, copy the article in your local repo, or click the Raw button in the GitHub UI and copy the markdown.
@@ -68,9 +67,12 @@ Ut eu pretium lacus. Nullam purus est, iaculis sed est vel, euismod vehicula odi
             @"OK" otherButtonTitles:nil, nil];
             [alert show];
         }
-
-    > [AZURE.NOTE] Duis sed diam non <i>nisl molestie</i> pharetra eget a est. [Link 2 to another azure.microsoft.com documentation topic](web-sites-custom-domain-name.md)
-
+   
+   > [!NOTE]
+   > Duis sed diam non <i>nisl molestie</i> pharetra eget a est. [Link 2 to another azure.microsoft.com documentation topic](web-sites-custom-domain-name.md)
+   > 
+   > 
+   > 
 
 Quisque commodo eros vel lectus euismod auctor eget sit amet leo. Proin faucibus suscipit tellus dignissim ultrices.
 

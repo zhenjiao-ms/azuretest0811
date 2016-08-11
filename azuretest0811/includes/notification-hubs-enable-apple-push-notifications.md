@@ -37,18 +37,16 @@ To be able to send push notifications to an iOS app, you must register your appl
       This generates your App ID and requests you to confirm the information. Click **Register** to confirm the new App ID.
      
       Once you click **Register**, you will see the **Registration complete** screen, as shown below. Click **Done**.
-
-    ![](./media/notification-hubs-enable-apple-push-notifications/notification-hubs-appid-registration-complete.png)
-
-
-1. In the Developer Center, under App IDs, locate the app ID that you just created, and click on its row.
+     
+     ![](./media/notification-hubs-enable-apple-push-notifications/notification-hubs-appid-registration-complete.png)
+3. In the Developer Center, under App IDs, locate the app ID that you just created, and click on its row.
    
        ![](./media/notification-hubs-enable-apple-push-notifications/notification-hubs-ios-appids2.png)
    
        Clicking on the app ID will display the app details. Click the **Edit** button at the bottom.
    
        ![](./media/notification-hubs-enable-apple-push-notifications/notification-hubs-edit-appid.png)
-2. Scroll to the bottom of the screen, and click the **Create Certificate...** button under the section **Development Push SSL Certificate**.
+4. Scroll to the bottom of the screen, and click the **Create Certificate...** button under the section **Development Push SSL Certificate**.
    
        ![](./media/notification-hubs-enable-apple-push-notifications/notification-hubs-appid-create-cert.png)
    
@@ -57,10 +55,10 @@ To be able to send push notifications to an iOS app, you must register your appl
    > [!NOTE]
    > This tutorial uses a development certificate. The same process is used when registering a production certificate. Just make sure that you use the same certificate type when sending notifications.
    > 
-3. Click **Choose File**, browse to the location where you saved the CSR file that you created in the first task, then click **Generate**.
+5. Click **Choose File**, browse to the location where you saved the CSR file that you created in the first task, then click **Generate**.
    
       ![](./media/notification-hubs-enable-apple-push-notifications/notification-hubs-appid-cert-choose-csr.png)
-4. After the certificate is created by the portal, click the **Download** button, and click **Done**.
+6. After the certificate is created by the portal, click the **Download** button, and click **Done**.
    
       ![](./media/notification-hubs-enable-apple-push-notifications/notification-hubs-appid-download-cert.png)
    
@@ -71,7 +69,7 @@ To be able to send push notifications to an iOS app, you must register your appl
    > [!NOTE]
    > By default, the downloaded file a development certificate is named **aps_development.cer**.
    > 
-5. Double-click the downloaded push certificate **aps_development.cer**.
+7. Double-click the downloaded push certificate **aps_development.cer**.
    
        This installs the new certificate in the Keychain, as shown below:
    
@@ -80,7 +78,7 @@ To be able to send push notifications to an iOS app, you must register your appl
    > [!NOTE]
    > The name in your certificate might be different, but it will be prefixed with **Apple Development iOS Push Services:**.
    > 
-6. In Keychain Access, right-click the new push certificate that you created in the **Certificates** category. Click **Export**, name the file, select the **.p12** format, and then click **Save**.
+8. In Keychain Access, right-click the new push certificate that you created in the **Certificates** category. Click **Export**, name the file, select the **.p12** format, and then click **Save**.
    
     ![](./media/notification-hubs-enable-apple-push-notifications/notification-hubs-export-cert-p12.png)
    
@@ -88,6 +86,8 @@ To be able to send push notifications to an iOS app, you must register your appl
    
    > [!NOTE]
    > This tutorial creates a QuickStart.p12 file. Your file name and location might be different.
+   > 
+   > 
    > 
    > 
    > 

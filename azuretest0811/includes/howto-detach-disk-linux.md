@@ -38,16 +38,16 @@ Prior to detaching the disk from the Linux guest, you should identify all partit
             [5:0:0:0]    disk    Msft     Virtual Disk     1.0   /dev/sdc
             [5:0:0:1]    disk    Msft     Virtual Disk     1.0   /dev/sdd
 2. Use `fdisk -l <disk>` to discovery the partitions associated with the disk to be detached.
-3.          $ sudo fdisk -l /dev/sdc
-            Disk /dev/sdc: 1098.4 GB, 1098437885952 bytes, 2145386496 sectors
-            Units = sectors of 1 * 512 = 512 bytes
-            Sector size (logical/physical): 512 bytes / 512 bytes
-            I/O size (minimum/optimal): 512 bytes / 512 bytes
-            Disk label type: dos
-            Disk identifier: 0x5a1d2a1a
+3. $ sudo fdisk -l /dev/sdc
+   Disk /dev/sdc: 1098.4 GB, 1098437885952 bytes, 2145386496 sectors
+   Units = sectors of 1 * 512 = 512 bytes
+   Sector size (logical/physical): 512 bytes / 512 bytes
+   I/O size (minimum/optimal): 512 bytes / 512 bytes
+   Disk label type: dos
+   Disk identifier: 0x5a1d2a1a
    
-               Device Boot      Start         End      Blocks   Id  System
-            /dev/sdc1            2048  2145386495  1072692224   83  Linux
+      Device Boot      Start         End      Blocks   Id  System
+   /dev/sdc1            2048  2145386495  1072692224   83  Linux
 4. Unmount each partition listed for the disk. In this example: `$ sudo umount /dev/sdc1`
 5. Use the `blkid` command to discovery the UUIDs for all partitions
    

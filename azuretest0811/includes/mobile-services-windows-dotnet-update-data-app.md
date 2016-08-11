@@ -30,10 +30,9 @@
 4. In the **InsertTodoItem** method, remove the line of code that sets the **TodoItem.Id** property, add the **async** modifier to the method, and uncomment the following line of code: 
    
         await todoTable.InsertAsync(todoItem);
-
+   
     This code inserts a new item into the table. 
-
-1. Replace the **RefreshTodoItems** method with the following code: 
+5. Replace the **RefreshTodoItems** method with the following code: 
    
         private async void RefreshTodoItems()
         {
@@ -59,7 +58,7 @@
         }
    
     This sets the binding to the collection of items in `todoTable`, which contains all of the **TodoItem** objects returned from the mobile service. If there is a problem executing the query, a message box is raised to display the errors. 
-2. In the **UpdateCheckedTodoItem** method, add the **async** modifier to the method, and uncomment the following line of code: 
+6. In the **UpdateCheckedTodoItem** method, add the **async** modifier to the method, and uncomment the following line of code: 
    
         await todoTable.UpdateAsync(item);
    

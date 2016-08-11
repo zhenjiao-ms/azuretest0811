@@ -26,6 +26,8 @@ The TodoItem class defines the data object, and you need to add the same propert
    > When using the default database initializer, Entity Framework will drop and recreate the database when it detects a data model change in the Code First definition. To make this data model change and maintain existing data in the database, you must use Code First Migrations. The default initializer cannot be used against a SQL Database in Azure. For more information, see [How to Use Code First Migrations to Update the Data Model](../articles/mobile-services-dotnet-backend-how-to-use-code-first-migrations.md).
    > 
    > 
+   > 
+   > 
 
 ## Update the TodoItem controller to generate a shared access signature
 The existing **TodoItemController** is updated so that the **PostTodoItem** method generates an SAS when a new TodoItem is inserted. You also 
@@ -115,6 +117,8 @@ The existing **TodoItemController** is updated so that the **PostTodoItem** meth
    > [!NOTE]
    > This code creates an SAS for an individual BLOB. If you need to upload multiple blobs to a container using the same SAS, you can instead call the <a href="http://go.microsoft.com/fwlink/?LinkId=390455" target="_blank">generateSharedAccessSignature method</a> with an empty blob resource name, like this: 
    > <pre><code>blobService.generateSharedAccessSignature(containerName, '', sharedAccessPolicy);</code></pre>
+   > 
+   > 
    > 
    > 
 

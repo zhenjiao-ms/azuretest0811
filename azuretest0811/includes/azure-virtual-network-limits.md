@@ -6,7 +6,7 @@ The following limits apply only for networking resources managed through the cla
 | Local network sites per subscription |20 |contact support |
 | DNS Servers per virtual network |20 |100 |
 | Private IP Addresses per virtual network |4096 |4096 |
-| Concurrent TCP connections for a virtual machine or role instance |500K |500K  |
+| Concurrent TCP connections for a virtual machine or role instance |500K |500K |
 | Network Security Groups (NSG) |100 |200 |
 | NSG rules per NSG |200 |400 |
 | User defined route tables |100 |200 |

@@ -78,12 +78,13 @@ Perform the following steps to install and verify regular-mode hotfixes. If you 
         LastUpdateTimestamp : 5/17/2016 9:06:07 AM
         Controller0Events   :
         Controller1Events   :
-
+   
         ````
-
-    > [AZURE.NOTE] Occasionally, the cmdlet reports `False` when the update is still in progress. To ensure that the hotfix is complete, wait for a few minutes, rerun this command and verify that the `RunInProgress` is `False`. If it is, then the hotfix has completed.
-
-1. After the software update is complete, verify the system software versions. Type:
+   
+   > [!NOTE]
+   > Occasionally, the cmdlet reports `False` when the update is still in progress. To ensure that the hotfix is complete, wait for a few minutes, rerun this command and verify that the `RunInProgress` is `False`. If it is, then the hotfix has completed.
+   > 
+6. After the software update is complete, verify the system software versions. Type:
    
     `Get-HcsSystem`
    
@@ -98,17 +99,15 @@ Perform the following steps to install and verify regular-mode hotfixes. If you 
      > [!IMPORTANT]
      > You must restart the active controller via the `Restart-HcsController` cmdlet before applying the remaining updates. 
      > 
-2. Repeat steps 3-5 to install the remaining regular-mode hotfixes.
+7. Repeat steps 3-5 to install the remaining regular-mode hotfixes.
    
    * The iSCSI update KB3146621
    * The WMI update KB3103616
-3. Skip this step if you are updating from Update 2. If you are updating from a version prior to Update 2, you will also need to download:
-
-    - The LSI driver KB3121900
-
-    - The Spaceport update KB3090322
-
-    - The Storport update KB3080728
+8. Skip this step if you are updating from Update 2. If you are updating from a version prior to Update 2, you will also need to download:
+   
+   * The LSI driver KB3121900
+   * The Spaceport update KB3090322
+   * The Storport update KB3080728
 
 #### To install and verify maintenance mode hotfixes
 Use KB3121899 to install disk firmware updates. These are disruptive updates and take around 30 minutes to complete. You can choose to install these in a planned maintenance window by connecting to the device serial console.

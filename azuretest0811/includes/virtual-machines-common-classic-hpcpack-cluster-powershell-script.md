@@ -39,6 +39,8 @@ New-HPCIaaSCluster.ps1 [-ConfigFile] <String> [-AdminUserName]<String> [[-AdminP
   > This parameter is not recommended for production deployments.
   > 
   > 
+  > 
+  > 
 
 ### Example
 The following example creates a new HPC Pack cluster using the

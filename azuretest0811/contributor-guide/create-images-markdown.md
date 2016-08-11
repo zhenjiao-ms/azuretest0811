@@ -15,7 +15,6 @@ ms.tgt_pltfrm: ''
 ms.workload: ''
 ms.date: 06/25/2015
 ms.author: kenhoff
-
 ---
 # Create images in markdown
 ## Image folder creation and link syntax
@@ -34,7 +33,7 @@ After you create the folder and added images to it, use the following syntax to 
 ```
 Example:
 
-See [the markdown template](../markdown%20templates/markdown-template-for-new-articles.md) for an example.  The image reference links in this markdown template are designed to be at the bottom of the template.
+See [the markdown template](../markdown templates/markdown-template-for-new-articles.md) for an example.  The image reference links in this markdown template are designed to be at the bottom of the template.
 
 ## Guidelines specific to azure.microsoft.com
 Screenshots are currently encouraged if it's not possible to include repro steps. Do write your content so that the content can stand without the screenshots if necessary.

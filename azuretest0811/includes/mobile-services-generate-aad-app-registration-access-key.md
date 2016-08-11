@@ -24,5 +24,6 @@
     <td>AAD_TENANT_DOMAIN</td><td>Your AAD domain name. Should be similar to "mydomain.onmicrosoft.com"</td>
     </tr>
     </table><br/>
-
+   
     ![](./media/mobile-services-generate-aad-app-registration-access-key/aad-app-settings.png)
+

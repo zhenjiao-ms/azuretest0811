@@ -90,12 +90,15 @@ when the cached content time-to-live period expires.
    
     The origin domain is the location from which the CDN caches
     content. The origin domain can be either a storage account or a cloud service; a storage account is used for the purposes of this example. Storage content is cached to edge servers according either to a cache-control setting that you specify, or to the default heuristics of the caching network. 
-
-    > [AZURE.NOTE] The configuration created for the endpoint will not
-    immediately be available; it can take up to 60 minutes for the
-    registration to propagate through the CDN network. Users who try to
-    use the CDN domain name immediately may receive status code 400
-    (Bad Request) until the content is available via the CDN.
+   
+   > [!NOTE]
+   > The configuration created for the endpoint will not
+   > immediately be available; it can take up to 60 minutes for the
+   > registration to propagate through the CDN network. Users who try to
+   > use the CDN domain name immediately may receive status code 400
+   > (Bad Request) until the content is available via the CDN.
+   > 
+   > 
 
 <a id="Step3"> </a>
 

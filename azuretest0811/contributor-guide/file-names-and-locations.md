@@ -17,7 +17,6 @@ ms.tgt_pltfrm: ''
 ms.workload: ''
 ms.date: 03/14/2016
 ms.author: tysonn
-
 ---
 # File names and locations for Azure technical articles
 In our technical content repository, we use a single folder (the **articles** folder) for all articles. There's no folder hierarchy - all articles live in the flat file structure. If you create folders with articles in them, your articles can't be published.

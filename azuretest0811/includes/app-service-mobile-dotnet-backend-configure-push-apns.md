@@ -6,35 +6,35 @@
      
           using Microsoft.Azure.Mobile.Server.Config;
           using Microsoft.Azure.NotificationHubs;
-
-    3. Replace the `PostTodoItem` method with the following code:  
-
+     
+     1. Replace the `PostTodoItem` method with the following code:  
+        
             public async Task<IHttpActionResult> PostTodoItem(TodoItem item)
             {
                 TodoItem current = await InsertAsync(item);
                 // Get the settings for the server project.
                 HttpConfiguration config = this.Configuration;
-
+        
                 MobileAppSettingsDictionary settings = 
                     this.Configuration.GetMobileAppSettingsProvider().GetMobileAppSettings();
-
+        
                 // Get the Notification Hubs credentials for the Mobile App.
                 string notificationHubName = settings.NotificationHubName;
                 string notificationHubConnection = settings
                     .Connections[MobileAppSettingsKeys.NotificationHubConnectionString].ConnectionString;
-
+        
                 // Create a new Notification Hub client.
                 NotificationHubClient hub = NotificationHubClient
                 .CreateClientFromConnectionString(notificationHubConnection, notificationHubName);
-
+        
                 // iOS payload
                 var appleNotificationPayload = "{\"aps\":{\"alert\":\"" + item.Text + "\"}}";
-
+        
                 try
                 {
                     // Send the push notification and log the results.
                     var result = await hub.SendAppleNativeNotificationAsync(appleNotificationPayload);
-
+        
                     // Write the success result to the logs.
                     config.Services.GetTraceWriter().Info(result.State.ToString());
                 }
@@ -46,30 +46,28 @@
                 }
                 return CreatedAtRoute("Tables", new { id = current.Id }, current);
             }
-
-    4. Republish the server project.
-
+     2. Republish the server project.
 * **Node.js backend** : 
   
   1. If you haven't already done so, [download the quickstart project](../articles/app-service-mobile/app-service-mobile-node-backend-how-to-use-server-sdk.md#download-quickstart) or else use the [online editor in the Azure portal](../articles/app-service-mobile/app-service-mobile-node-backend-how-to-use-server-sdk.md#online-editor).    
   2. Replace the todoitem.js table script with the following code:
-
+     
             var azureMobileApps = require('azure-mobile-apps'),
                 promises = require('azure-mobile-apps/src/utilities/promises'),
                 logger = require('azure-mobile-apps/src/logger');
-
+     
             var table = azureMobileApps.table();
-
+     
             // When adding record, send a push notification via APNS
             // For this to work, you must have an APNS Hub already configured
             table.insert(function (context) {
                 // For details of the Notification Hubs JavaScript SDK, 
                 // see http://aka.ms/nodejshubs
                 logger.info('Running TodoItem.insert');
-
+     
                 // Create a payload that contains the new item Text.
                 var payload = "{\"aps\":{\"alert\":\"" + context.item.text + "\"}}";
-
+     
                 // Execute the insert.  The insert returns the results as a Promise,
                 // Do the push as a post-execute action within the promise flow.
                 return context.execute()
@@ -91,7 +89,8 @@
                         logger.error('Error while running context.execute: ', error);
                     });
             });
-
+     
             module.exports = table;
+     
+     1. When editing the file on your local computer, republish the server project.
 
-    2. When editing the file on your local computer, republish the server project.

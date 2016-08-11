@@ -16,7 +16,6 @@ ms.date: 10/05/2015
 ms.author: trinadhk
 ;"jimpark";: ''
 "\"aashishr\"": ''
-
 ---
 The following limits apply to Azure Backup.
 

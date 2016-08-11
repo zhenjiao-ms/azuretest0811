@@ -17,7 +17,6 @@ ms.tgt_pltfrm: ''
 ms.workload: ''
 ms.date: 02/03/2015
 ms.author: tysonn
-
 ---
 # Linking guidance for Azure technical content
 ### Links from one ACOM article to another

@@ -1,4 +1,5 @@
 > [!div class="op_single_selector"]
+> 
 > * [What is it](../articles/active-directory/active-directory-passwords.md)
 > * [How it works](../articles/active-directory/active-directory-passwords-how-it-works.md)
 > * [Getting started](../articles/active-directory/active-directory-passwords-getting-started.md)

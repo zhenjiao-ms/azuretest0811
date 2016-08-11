@@ -1,4 +1,5 @@
 > [!div class="op_single_selector"]
+> 
 > * [Overview & Setup](../articles/machine-learning/machine-learning-data-science-spark-overview.md)
 > * [Data Exploration and Modeling](../articles/machine-learning/machine-learning-data-science-spark-data-exploration-modeling.md)
 > * [Scoring & Consumption](../articles/machine-learning/machine-learning-data-science-spark-model-consumption.md)

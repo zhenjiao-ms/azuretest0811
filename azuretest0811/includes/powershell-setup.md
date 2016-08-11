@@ -13,7 +13,6 @@ ms.tgt_pltfrm: ''
 ms.workload: infrastructure
 ms.date: 05/12/2015
 ms.author: josephd
-
 ---
 ## Setting up PowerShell
 Before you can use Azure PowerShell, follow these steps.

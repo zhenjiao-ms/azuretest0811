@@ -9,8 +9,8 @@ Limits depend on the [pricing tier](https://azure.microsoft.com/pricing/details/
 | [Trace and Log](../articles/application-insights/app-insights-search-diagnostic-logs.md) data rate |200 dp/s |500 dp/s |
 | [Exception](../articles/application-insights/app-insights-asp-net-exceptions.md) data rate |50 dp/s |50 dp/s |
 | Total data rate for request, event, dependency, and page view telemetry |200 dp/s |500 dp/s |
-| Raw data retention for [Search](../articles/application-insights/app-insights-diagnostic-search.md) and [Analytics](../articles/application-insights/app-insights-analytics.md) |7 days |
-| Aggregated data retention for [Metrics explorer](../articles/application-insights/app-insights-metrics-explorer.md) |90 days |
+| Raw data retention for [Search](../articles/application-insights/app-insights-diagnostic-search.md) and [Analytics](../articles/application-insights/app-insights-analytics.md) |7 days | |
+| Aggregated data retention for [Metrics explorer](../articles/application-insights/app-insights-metrics-explorer.md) |90 days | |
 | [Property](../articles/application-insights/app-insights-api-custom-events-metrics.md#properties) name count |100 | |
 | Property name length |150 | |
 | Property value length |8192 | |

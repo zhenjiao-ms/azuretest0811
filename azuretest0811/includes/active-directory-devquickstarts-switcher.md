@@ -1,4 +1,5 @@
 > [!div class="op_single_selector"]
+> 
 > * [iOS](../articles/active-directory/active-directory-devquickstarts-ios.md)
 > * [Android](../articles/active-directory/active-directory-devquickstarts-android.md)
 > * [.NET](../articles/active-directory/active-directory-devquickstarts-dotnet.md)

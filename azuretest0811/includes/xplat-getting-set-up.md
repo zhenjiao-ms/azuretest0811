@@ -13,7 +13,6 @@ ms.tgt_pltfrm: linux
 ms.workload: infrastructure
 ms.date: 04/13/2015
 ms.author: rasquill
-
 ---
 ## Using Azure CLI
 The following steps help you use Azure CLI easily with the most recent version and the proper subscription. If you need to install Azure CLI and connect it to your account first, see the [Azure Command-Line Interface (Azure CLI)](../articles/xplat-cli-install.md).

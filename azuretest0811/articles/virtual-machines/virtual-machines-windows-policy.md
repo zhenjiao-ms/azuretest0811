@@ -3,7 +3,7 @@ title: Apply policies to Azure Resource Manager Virtual Machines | Microsoft Azu
 description: How to apply a policy to an Azure Resource Manager Windows Virtual Machine
 services: virtual-machines-windows
 documentationcenter: ''
-author: singhkays
+author: singhkay
 manager: drewm
 editor: ''
 tags: azure-resource-manager

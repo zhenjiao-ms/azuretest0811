@@ -174,6 +174,8 @@ You can now upload the exported PFX file to your app in Azure App Service.
    > `````
    > 
    > 
+   > 
+   > 
    
     After running this command, you should have a **myserver.pfx** file suitable for use with Azure App Service.
 
@@ -194,6 +196,8 @@ If you are familiar with IIS Manager, you can use it to generate a certificate t
    > During the export process, be sure to select the option <strong>Yes, export the private key</strong>. This will include the private key in the exported certificate.
    > 
    > During the export process, be sure to select the option **include all certs in the certification path** and **Export all extended properties**. This will include any intermediate certificates in the exported certificate.
+   > 
+   > 
    > 
    > 
 
@@ -246,11 +250,10 @@ OpenSSL can be used to create a certificate request that uses the SubjectAltName
         Locality Name (eg, city) []: Redmond
         Organizational Unit Name (eg, section) []: Azure
         Your common name (eg, domain name) []: www.microsoft.com
-
+   
     Once this process completes, you should have two files; **myserver.key** and **server.csr**. The **server.csr** contains the Certificate Signing Request.
-
-1. Submit your CSR to a Certificate Authority to obtain an SSL certificate. For a list of Certificate Authorities, see [Windows and Windows Phone 8 SSL Root Certificate Program (Members CAs)](http://go.microsoft.com/fwlink/?LinkID=269988) on the Microsoft TechNet Wiki.
-2. Once you have obtained a certificate from a CA, save it to a file named **myserver.crt**. If your CA provided the certificate in a text format, simply paste the certificate text into the **myserver.crt** file. The file contents should be similar to the following when viewed in a text editor:
+5. Submit your CSR to a Certificate Authority to obtain an SSL certificate. For a list of Certificate Authorities, see [Windows and Windows Phone 8 SSL Root Certificate Program (Members CAs)](http://go.microsoft.com/fwlink/?LinkID=269988) on the Microsoft TechNet Wiki.
+6. Once you have obtained a certificate from a CA, save it to a file named **myserver.crt**. If your CA provided the certificate in a text format, simply paste the certificate text into the **myserver.crt** file. The file contents should be similar to the following when viewed in a text editor:
    
         -----BEGIN CERTIFICATE-----
         MIIDJDCCAgwCCQCpCY4o1LBQuzANBgkqhkiG9w0BAQUFADBUMQswCQYDVQQGEwJV
@@ -273,7 +276,7 @@ OpenSSL can be used to create a certificate request that uses the SubjectAltName
         -----END CERTIFICATE-----
    
     Save the file.
-3. From the command-line, Bash or terminal session, use the following command to convert the **myserver.key** and **myserver.crt** into **myserver.pfx**, which is the format required by Azure App Service:
+7. From the command-line, Bash or terminal session, use the following command to convert the **myserver.key** and **myserver.crt** into **myserver.pfx**, which is the format required by Azure App Service:
    
         openssl pkcs12 -export -out myserver.pfx -inkey myserver.key -in myserver.crt
    
@@ -288,6 +291,8 @@ OpenSSL can be used to create a certificate request that uses the SubjectAltName
    > `````
    > openssl pkcs12 -chain -export -out myserver.pfx -inkey myserver.key -in myserver.crt -certfile intermediate-cets.pem
    > `````
+   > 
+   > 
    > 
    > 
    
@@ -394,6 +399,8 @@ Enabling HTTPS for a custom domain is only available for the **Standard** and **
    
    > [!NOTE]
    > If you receive a "Configuring scale for web app '&lt;app name&gt;' failed" error you can use the details button to get more information. You may receive a "Not enough available standard instance servers to satisfy this request." error. If you receive this error, please contact [Azure support](/support/options/).
+   > 
+   > 
    > 
    > 
 
